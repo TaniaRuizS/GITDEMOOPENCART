@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="openCart" tests="1" skipped="1" failures="0" errors="0" timestamp="2022-05-03T19:39:09" hostname="DESKTOP-4PA18HQ" time="0.028">
+  <properties/>
+  <testcase name="Enter data to filter" classname="openCart" time="0.028">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6f1c7e4f
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@215b7cb1
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@354ad1d4
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Enter data to filter:Given Tania wants to filter data in the SEO URL list, When She enter the data in the filter field, Then She looks for the information on the filter button
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Enter data to filter:Given Tania wants to filter data in the SEO URL list, When She enter the data in the filter field, Then She looks for the information on the filter button]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Enter data to filter:Given Tania wants to filter data in the SEO URL list, When She enter the data in the filter field, Then She looks for the information on the filter button]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: Enter data to filter
+---------------------------------------------------------------------------------
+]]></system-err>
+</testsuite>

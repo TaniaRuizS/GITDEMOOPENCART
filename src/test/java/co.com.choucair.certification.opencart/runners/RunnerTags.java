@@ -7,9 +7,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions (
-        features = "src/test/resources/features/pageDemo.feature",
+        features = "src\\test\\resources\\features\\openCart.feature",
         tags = "@stories",
-        glue = "co.com.choucair.certification.automatizaciondemo.stepdefinitions",
+        glue = "co.com.choucair.certification.opencart.stepdefinitions",
         snippets = SnippetType.CAMELCASE)
 
 public class RunnerTags {
