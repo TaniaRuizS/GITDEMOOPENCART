@@ -7,7 +7,18 @@ Feature: openCart
 
   @scenario1
 
-Scenario: Enter data to filter
+Scenario Outline: Enter data to filter
     Given Tania wants to filter data in the SEO URL list
     When She enter the data in the filter field
+
+      | query   | keyword   | store   | language   |
+      | <query> | <keyword> | <store> | <language> |
+
+
     Then She looks for the information on the filter button
+
+    Examples:
+      | query          | keyword   | store   | language |
+      | product_id=47  | hp-lp3065 | Default | English  |
+      | product_id=41  | iphone    | Default | English  |
+      | category_id=18 |           |         |          |
