@@ -18,8 +18,9 @@ Feature: openCart
       | <seourllist> |
 
     Examples:
-      | username | password | seourl  | query         | keyword   | store   | language | seourllist   |
-      | demo     | demo     | SEO URL | product_id=47 | hp-lp3065 | Default | English  | SEO URL List |
+      | username | password | seourl  | query             | keyword   | store   | language | seourllist   |
+      | demo     | demo     | SEO URL | product_id=47     | hp-lp3065 | Default | English  | SEO URL List |
+      | demo     | demo     | SEO URL | manufacturer_id=9 |           | Default | English  | SEO URL List |
 
   @scenario2
   Scenario Outline: filter to edit
@@ -33,8 +34,9 @@ Feature: openCart
       | <warning> |
 
     Examples:
-      | username | password | seourl  | query         | keyword   | store   | language | queryedit      | keywordedit | storeedit | languajeedit | warning                                                   |
-      | demo     | demo     | SEO URL | product_id=47 | hp-lp3065 | Default | English  | category_id=18 | NO          | Default   | English      | Warning: You do not have permission to modify SEO URL!\n× |
+      | username | password | seourl  | query          | keyword         | store   | language | queryedit      | keywordedit | storeedit | languajeedit | warning                                                   |
+      | demo     | demo     | SEO URL | product_id=47  | hp-lp3065       | Default | English  | category_id=18 | CORRECION   | Default   | English      | Warning: You do not have permission to modify SEO URL!\n× |
+      | demo     | demo     | SEO URL | category_id=18 | laptop-notebook | Default | English  | EDICION        | CORRECION   | Default   | English      | Warning: You do not have permission to modify SEO URL!\n× |
 
 
   @scenario3
