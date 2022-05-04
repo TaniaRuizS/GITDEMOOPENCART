@@ -22,9 +22,9 @@ public class AnswerEdit implements Question<Boolean> {
         boolean result;
         String warning= Text.of(FilterEditData.WARNING).viewedBy(actor).asString();
         if (dataFilterBD.getWarning().equals(warning)) {
-            result = false;
-        }else {
             result = true;
+        }else {
+            result = false;
         }
         return result;
     }

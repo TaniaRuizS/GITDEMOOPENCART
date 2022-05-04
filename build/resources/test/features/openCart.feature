@@ -33,8 +33,8 @@ Feature: openCart
       | <warning> |
 
     Examples:
-      | username | password | seourl  | query         | keyword   | store   | language | queryedit      | keywordedit | warning |
-      | demo     | demo     | SEO URL | product_id=47 | hp-lp3065 | Default | English  | category_id=18 | NO          | Warning |
+      | username | password | seourl  | query         | keyword   | store   | language | queryedit      | keywordedit | warning                                                   |
+      | demo     | demo     | SEO URL | product_id=47 | hp-lp3065 | Default | English  | category_id=18 | NO          | Warning: You do not have permission to modify SEO URL!\n× |
 
 
   @scenario3
@@ -45,9 +45,9 @@ Feature: openCart
       | <username> | <password> | <seourl> | <queryedit> | <keywordedit> |
 
     Then displays an alert message about the characters
-      | characters |
-      |<characters>|
+      | characters   |
+      | <characters> |
 
     Examples:
-      | username | password | seourl  | queryedit      | keywordedit | characters |
-      | demo     | demo     | SEO URL | category_id=18 |             |characters  |
+      | username | password | seourl  | queryedit      | keywordedit | characters                                   |
+      | demo     | demo     | SEO URL | category_id=18 |             | Keyword must be between 3 and 64 characters! |

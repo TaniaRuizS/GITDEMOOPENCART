@@ -34,14 +34,8 @@ public class Filter implements Task {
         selectSeoUrl(actor);
         actor.attemptsTo(Enter.theValue(dataFilterBD.getQuery()).into(FilterData.INPUT_QUERY));
         actor.attemptsTo(Enter.theValue(dataFilterBD.getKeyword()).into(FilterData.INPUT_KEYWORD));
-        actor.attemptsTo(Click.on(FilterData.CLICK_STORE));
-        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterData.CLICK_STORE));
-        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterData.CLICK_STORE));
-        actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterData.CLICK_STORE));
-        actor.attemptsTo(Click.on(FilterData.CLICK_LANGUAJE));
-        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterData.CLICK_LANGUAJE));
-        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterData.CLICK_LANGUAJE));
-        actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterData.CLICK_LANGUAJE));
+        selectStore(actor);
+        selectLanguaje(actor);
         actor.attemptsTo(Click.on(FilterData.BUTTON_FILTER));
     }
     public void selectSeoUrl(Actor actor) {
@@ -50,6 +44,20 @@ public class Filter implements Task {
         Target select_seoUrl = Target.the("Select SEO URL").
                 located(By.xpath(String.format(xpath, seoUrl)));
         actor.attemptsTo(Click.on(select_seoUrl));
+    }
+    public void selectStore(Actor actor) {
+        String store = dataFilterBD.getStore();
+        String xpath = "//option[contains(text(),'%s')]";
+        Target select_store = Target.the("Select Store").
+                located(By.xpath(String.format(xpath, store)));
+        actor.attemptsTo(Click.on(select_store));
+    }
+    public void selectLanguaje(Actor actor) {
+        String store = dataFilterBD.getLanguage();
+        String xpath = "//option[contains(text(),'%s')]";
+        Target select_languaje = Target.the("Select Languaje").
+                located(By.xpath(String.format(xpath, store)));
+        actor.attemptsTo(Click.on(select_languaje));
     }
 
 }

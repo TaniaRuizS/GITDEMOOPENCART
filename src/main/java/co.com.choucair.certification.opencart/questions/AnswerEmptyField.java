@@ -24,9 +24,9 @@ public class AnswerEmptyField implements Question<Boolean> {
         boolean result;
         String characters= Text.of(EditEmptyFieldData.CHARACTERS).viewedBy(actor).asString();
         if (dataFilterBD.getCharacters().equals(characters)) {
-            result = false;
-        }else {
             result = true;
+        }else {
+            result = false;
         }
         return result;
     }
