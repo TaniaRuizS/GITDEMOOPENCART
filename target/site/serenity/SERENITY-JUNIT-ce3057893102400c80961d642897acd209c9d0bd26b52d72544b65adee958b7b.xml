@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="openCart" skipped="0" tests="1" time="12.28" timestamp="2022-05-04 03:23:31"><testcase name="Enter data to filter"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="openCart" skipped="0" tests="3" time="37.66" timestamp="2022-05-04 03:43:46"><testcase name="Enter data to filter"/><testcase name="filter to edit"/><testcase name="Edit information leaving mandatory fields empty"/></testsuite>
