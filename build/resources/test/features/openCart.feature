@@ -29,7 +29,23 @@ Feature: openCart
       | <username> | <password> | <seourl> | <query> | <keyword> | <store> | <language> | <queryedit> | <keywordedit> |
 
     Then She displays a warning message
+      | warning   |
+      | <warning> |
 
     Examples:
-      | username |  password | seourl  | query          | keyword         | store   | language | queryedit      | keywordedit |
-      | demo     |  demo     | SEO URL | product_id=47  | hp-lp3065       | Default | English  | category_id=18 | NO          |
+      | username | password | seourl  | query         | keyword   | store   | language | queryedit      | keywordedit | warning |
+      | demo     | demo     | SEO URL | product_id=47 | hp-lp3065 | Default | English  | category_id=18 | NO          | Warning |
+
+
+  @scenario3
+  Scenario Outline: Edit information leaving mandatory fields empty
+    Given Tania wants to edit list data leaving mandatory fields empty
+    When She enters the data she wants to edit leaving a mandatory field empty
+      | username   | password   | seourl   | queryedit   | keywordedit   |
+      | <username> | <password> | <seourl> | <queryedit> | <keywordedit> |
+
+    Then displays an alert message about the characters
+
+    Examples:
+      | username | password | seourl  | queryedit      | keywordedit |
+      | demo     | demo     | SEO URL | category_id=18 |             |

@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="8c45a53df8e856b39be1937bf6033adb08e4be45bc2851902bdfd94e0ed1adb7.html">Open Cart</a></span>
+                > <span class="truncate-60"><a
+                    href="c4bcd9dc5f488f91e0e060503385781d91a093929a4eb4292b0ca51cd10e4ae2.html">Edit information leaving mandatory fields empty </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-05-2022 13:14</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Open Cart </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user I want to filter the different data of the SEO URL list
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="5ef38027b063bdf433030ecf792b6a4e0a63ab8c058e31d5347d03c1dffb57c4.html">Scenario3
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Edit information leaving mandatory fields empty
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Tania wants to edit list data leaving mandatory fields empty<br>When She enters the data she wants to edit leaving a mandatory field empty<br><table class='embedded'><thead><th>username</th><th>password</th><th>seourl</th><th>queryedit</th><th>keywordedit</th></thead><tbody><tr><td>&lt;username&gt;</td><td>&lt;password&gt;</td><td>&lt;seourl&gt;</td><td>&lt;queryedit&gt;</td><td>&lt;keywordedit&gt;</td></tr></tbody></table><br>Then displays an alert message about the characters</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Example: {username=demo, password=demo, seourl=SEO URL, queryedit=category_id=18, keywordedit=}" width="1366"/>
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Given Tania wants to edit list data leaving mandatory fields empty" width="1366"/>
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Tania ruiz sanchez open up" width="1366"/>
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Tania Ruiz Sanchez opens the Cart open page" width="1366"/>
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Tania ruiz sanchez open up (completed)" width="1366"/>
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Given Tania wants to edit list data leaving mandatory fields empty (completed)" width="1366"/>
+                <img src="6ae890b09f600b09ccfe564a471155458cde7dc68daf6db742ad7312d2204e35.png" title=" When She enters the data she wants to edit leaving a mandatory field empty
+| username | password | seourl | queryedit | keywordedit |
+| demo | demo | SEO URL | category_id=18 |  |" width="1366"/>
+                <img src="6ae890b09f600b09ccfe564a471155458cde7dc68daf6db742ad7312d2204e35.png" title=" Tania ruiz sanchez edit empty field" width="1366"/>
+                <img src="6ae890b09f600b09ccfe564a471155458cde7dc68daf6db742ad7312d2204e35.png" title=" Tania Ruiz Sanchez enters 'demo' into enter username" width="1366"/>
+                <img src="e5accdc7a6031a09133fb1b024af8cfb1ea3593d30e8d47c4211b278b58f0d83.png" title=" Tania Ruiz Sanchez enters 'demo' into enter password" width="1366"/>
+                <img src="f74fdeaa0fc6b192e22667c8e4e2a9dd0dc84b6a2bb6bc37bf5154adeb2c256f.png" title=" Tania Ruiz Sanchez clicks on Click on the login button" width="1366"/>
+                <img src="a7c8f337763cfa7183419e8791ee27a271ec36aa7ee8276a95651028101f352b.png" title=" Tania Ruiz Sanchez clicks on Click on Desing" width="1366"/>
+                <img src="c98d4c50ed027ac61260a559638bfb93b105439ef750044841fb75d2f188cb2f.png" title=" Tania Ruiz Sanchez clicks on Select SEO URL" width="1366"/>
+                <img src="46d2bab58a7b62f45532995941d326517c856060392225021a313d0a4f28d8c0.png" title=" Tania Ruiz Sanchez clicks on Click boton edit" width="1366"/>
+                <img src="6b2d6b4633cb7a75d2f15683210553a86123575d19e289707f439d8da65c8d0f.png" title=" Tania Ruiz Sanchez clicks on Click boton edit" width="1366"/>
+                <img src="5a82b6f6d29f8d5e9aa9172a82aadb8311a6a535b7debd4b8166e0ba7f1db3bc.png" title=" Tania Ruiz Sanchez enters 'category_id=18' into Write the query edit" width="1366"/>
+                <img src="96b2c32c484f38b873ffc226f5ac6990e5defe5108fd7e8ae675a45bce655054.png" title=" Tania Ruiz Sanchez enters '' into Write the keyword edit" width="1366"/>
+                <img src="b50865d64dbe9095dad1bc8c11162b60e626f1ac8e2ce5c890a6dbba89dcedb7.png" title=" Tania Ruiz Sanchez clicks on Select the Store edit" width="1366"/>
+                <img src="4914675bd9f3434493873ffa4ceac7722e51d553e2b07dffd5b0811440dcf70d.png" title=" Tania Ruiz Sanchez types 'ARROW_DOWN' in Select the Store edit" width="1366"/>
+                <img src="00ef957e1bb456ab12b07ae0bc2d5471d3f7e726a4ccb1f44b5398685ea494b6.png" title=" Tania Ruiz Sanchez types 'ENTER' in Select the Store edit" width="1366"/>
+                <img src="be369c3c1db9dca000a33e214a3442b9a316868d0d07d3b31f2da3bef7794614.png" title=" Tania Ruiz Sanchez clicks on Select the Languaje edit" width="1366"/>
+                <img src="4b7ec7a322f9daa90c8e77c4e58032923d42db8ea5eb3f2b247ce290d5108d26.png" title=" Tania Ruiz Sanchez types 'ARROW_DOWN' in Select the Languaje edit" width="1366"/>
+                <img src="f14d9b06e4c8c8677170919742967e10199dacbe3f3857605a501063aa9d9de2.png" title=" Tania Ruiz Sanchez types 'ENTER' in Select the Languaje edit" width="1366"/>
+                <img src="99eee03935067f6c818b6c421eb1d1b92e181cfc9e9e53bbe46cc0cb3136579f.png" title=" Tania Ruiz Sanchez clicks on Click boton Save" width="1366"/>
+                <img src="99eee03935067f6c818b6c421eb1d1b92e181cfc9e9e53bbe46cc0cb3136579f.png" title=" Tania ruiz sanchez edit empty field (completed)" width="1366"/>
+                <img src="99eee03935067f6c818b6c421eb1d1b92e181cfc9e9e53bbe46cc0cb3136579f.png" title=" When She enters the data she wants to edit leaving a mandatory field empty
+| username | password | seourl | queryedit | keywordedit |
+| demo | demo | SEO URL | category_id=18 |  | (completed)" width="1366"/>
+                <img src="99eee03935067f6c818b6c421eb1d1b92e181cfc9e9e53bbe46cc0cb3136579f.png" title=" Then displays an alert message about the characters" width="1366"/>
+                <img src="99eee03935067f6c818b6c421eb1d1b92e181cfc9e9e53bbe46cc0cb3136579f.png" title=" Example: {username=demo, password=demo, seourl=SEO URL, queryedit=category_id=18, keywordedit=} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>

@@ -1,7 +1,9 @@
 package co.com.choucair.certification.opencart.stepdefinitions;
 
 import co.com.choucair.certification.opencart.model.DataFilterBD;
+import co.com.choucair.certification.opencart.questions.AnswerEdit;
 import co.com.choucair.certification.opencart.questions.AnswerFilter;
+import co.com.choucair.certification.opencart.tasks.EditEmptyField;
 import co.com.choucair.certification.opencart.tasks.Filter;
 import co.com.choucair.certification.opencart.tasks.FilterEdit;
 import co.com.choucair.certification.opencart.tasks.OpenUp;
@@ -30,6 +32,11 @@ public void setStage() { OnStage.setTheStage(new OnlineCast()); }
         OnStage.theActorCalled("Tania Ruiz Sanchez").wasAbleTo(OpenUp.thePage());
     }
 
+    @Given("^Tania wants to edit list data leaving mandatory fields empty$")
+    public void taniaWantsToEditListDataLeavingMandatoryFieldsEmpty() {
+        OnStage.theActorCalled("Tania Ruiz Sanchez").wasAbleTo(OpenUp.thePage());
+    }
+
 
     @When("^She enter the data in the filter field$")
     public void sheEnterTheDataInTheFilterField(List<DataFilterBD> dataFilterBD)  {
@@ -41,13 +48,23 @@ public void setStage() { OnStage.setTheStage(new OnlineCast()); }
         OnStage.theActorInTheSpotlight().attemptsTo(FilterEdit.the(dataFilterBD.get(0)));
     }
 
+    @When("^She enters the data she wants to edit leaving a mandatory field empty$")
+    public void sheEntersTheDataSheWantsToEditLeavingAMndatoryFieldEmpty(List<DataFilterBD> dataFilterBD)  {
+        OnStage.theActorInTheSpotlight().attemptsTo(EditEmptyField.the(dataFilterBD.get(0)));
+    }
+
     @Then("^She visualizes the information in SEO URL List$")
     public void SheVisualizesTheInformationInSEOURLList(List<DataFilterBD> dataFilterBD) {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(AnswerFilter.filter(dataFilterBD.get(0))));
     }
 
     @Then("^She displays a warning message$")
-    public void sheDisplaysAWarningMessage() {
+    public void sheDisplaysAWarningMessage(List<DataFilterBD> dataFilterBD) {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(AnswerEdit.edit(dataFilterBD.get(0))));
+    }
+
+    @Then("^displays an alert message about the characters$")
+    public void displaysAnAlertMessageAboutTheCharacters() {
         //OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(AnswerEdit.edit(dataFilterBD.get(0))));
     }
 

@@ -44,6 +44,6 @@ public class FilterEditData extends PageObject {
     public static final Target BUTTON_SAVE =Target.the("Click boton Save").located
             (By.xpath("//button[@class= 'btn btn-primary']"));
     //RESPUESTA CP 002
-    //public static final Target WARNING =Target.the("see alert message").located
-    //(By.xpath(//i[contains(text(), ' Warning')]));
+    public static final Target WARNING =Target.the("see alert message").located
+            (By.xpath("//div[contains(text(), 'Warning')]"));
 }
