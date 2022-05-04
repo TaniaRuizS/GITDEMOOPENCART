@@ -14,10 +14,10 @@ Scenario Outline: Enter data to filter
       | <username> | <password> | <seourl> | <query> | <keyword> | <store> | <language> |
 
 
-    Then She looks for the information on the filter button
+    Then She visualizes the SEO URL List
 
     Examples:
-      | username | password | seourl  | query          | keyword   | store   | language |
-      | demo     | demo     | Banners | product_id=47  | hp-lp3065 | Default | English  |
-      | demo     | demo     | SEO URL | product_id=41  | iphone    | Default | English  |
-      | demo     | demo     | SEO URL | category_id=18 |           |         |          |
+      | username | password | seourl  | query          | keyword         | store   | language |
+      | demo     | demo     | SEO URL | product_id=47  | hp-lp3065       | Default | English  |
+      | demo     | demo     | SEO URL | product_id=41  | imac            | Default | English  |
+      | demo     | demo     | SEO URL | category_id=18 | laptop-notebook | Default | English  |
