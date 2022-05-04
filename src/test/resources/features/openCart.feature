@@ -45,7 +45,9 @@ Feature: openCart
       | <username> | <password> | <seourl> | <queryedit> | <keywordedit> |
 
     Then displays an alert message about the characters
+      | characters |
+      |<characters>|
 
     Examples:
-      | username | password | seourl  | queryedit      | keywordedit |
-      | demo     | demo     | SEO URL | category_id=18 |             |
+      | username | password | seourl  | queryedit      | keywordedit | characters |
+      | demo     | demo     | SEO URL | category_id=18 |             |characters  |

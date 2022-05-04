@@ -13,6 +13,8 @@ public class DataFilterBD {
     private String keywordedit;
     private String seourllist;
     private String warning;
+    private String characters;
+
 
     public String getPassword() {return password;}
     public void setPassword(String password) {this.password = password;}
@@ -46,4 +48,7 @@ public class DataFilterBD {
 
     public String getWarning() {return warning;}
     public void setWarning(String warning) {this.warning = warning;}
+
+    public String getCharacters() {return characters;}
+    public void setCharacters(String characters) {this.characters = characters;}
 }

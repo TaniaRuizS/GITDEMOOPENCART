@@ -28,4 +28,8 @@ public class EditEmptyFieldData extends PageObject {
             (By.name("language_id"));
     public static final Target BUTTON_SAVE =Target.the("Click boton Save").located
             (By.xpath("//button[@class= 'btn btn-primary']"));
+
+    //RESPUESTA CP 003
+    public static final Target CHARACTERS =Target.the("see alert message of the characters").located
+            (By.xpath("//div[contains(text(), 'characters')]"));
 }
