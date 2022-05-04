@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="8c45a53df8e856b39be1937bf6033adb08e4be45bc2851902bdfd94e0ed1adb7.html">Open Cart</a></span>
+                > <span class="truncate-60"><a
+                    href="42f2b2c9b3e53314f3e6289599ca3e6c5d705d81e8e12b294d5a2acd0966b9cd.html">filter to edit </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-05-2022 10:56</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Open Cart </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user I want to filter the different data of the SEO URL list
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="0218fdbc5052f69d3f1f3166bb7e2fb1aaba25c78a7c7745c14ed1ccd35fa8dc.html">Scenario2
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">filter to edit
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Tania wants to edit data from the list consulted in SEO URL<br>When She enters the data she wants to edit<br><table class='embedded'><thead><th>username</th><th>password</th><th>seourl</th><th>query</th><th>keyword</th><th>store</th><th>language</th><th>queryedit</th><th>keywordedit</th></thead><tbody><tr><td>&lt;username&gt;</td><td>&lt;password&gt;</td><td>&lt;seourl&gt;</td><td>&lt;query&gt;</td><td>&lt;keyword&gt;</td><td>&lt;store&gt;</td><td>&lt;language&gt;</td><td>&lt;queryedit&gt;</td><td>&lt;keywordedit&gt;</td></tr></tbody></table><br>Then She displays a warning message</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Example: {username=demo, password=demo, seourl=SEO URL, query=product_id=47, keyword=hp-lp3065, store=Default, language=English, queryedit=category_id=18, keywordedit=NO}" width="1366"/>
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Given Tania wants to edit data from the list consulted in SEO URL" width="1366"/>
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Tania ruiz sanchez open up" width="1366"/>
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Tania Ruiz Sanchez opens the Cart open page" width="1366"/>
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Tania ruiz sanchez open up (completed)" width="1366"/>
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Given Tania wants to edit data from the list consulted in SEO URL (completed)" width="1366"/>
+                <img src="6ae890b09f600b09ccfe564a471155458cde7dc68daf6db742ad7312d2204e35.png" title=" When She enters the data she wants to edit
+| username | password | seourl | query | keyword | store | language | queryedit | keywordedit |
+| demo | demo | SEO URL | product_id=47 | hp-lp3065 | Default | English | category_id=18 | NO |" width="1366"/>
+                <img src="6ae890b09f600b09ccfe564a471155458cde7dc68daf6db742ad7312d2204e35.png" title=" Tania ruiz sanchez filter edit" width="1366"/>
+                <img src="6ae890b09f600b09ccfe564a471155458cde7dc68daf6db742ad7312d2204e35.png" title=" Tania Ruiz Sanchez enters 'demo' into enter username" width="1366"/>
+                <img src="46ed8f92daed19dfd4e0b377e8e883d0f50bcac41b2ab1f9111a7e5233249d3e.png" title=" Tania Ruiz Sanchez enters 'demo' into enter password" width="1366"/>
+                <img src="1ca547e2087813c3b7e5984d9c8edff6aa1003110507cc616a09042556a5f40d.png" title=" Tania Ruiz Sanchez clicks on Click on the login button" width="1366"/>
+                <img src="4ca5bbe6500997918d4577e3853d9dbc8402959e20eb3638b0439986a12640b6.png" title=" Tania Ruiz Sanchez clicks on Click on Desing" width="1366"/>
+                <img src="4e5c0254f2f493175723b3bccf95859b86a4730c5bd7a54247476b48d46bac31.png" title=" Tania Ruiz Sanchez clicks on Select SEO URL" width="1366"/>
+                <img src="081e5b069b7aedf91cabd608d218f79f8b8744af81b760f95690f3c1d3dcb440.png" title=" Tania Ruiz Sanchez enters 'product_id=47' into Write the query" width="1366"/>
+                <img src="bddd65e24ed22ce8dadab81710c9d547dc3519954c36ab2ec8f4f80aeb3a394d.png" title=" Tania Ruiz Sanchez enters 'hp-lp3065' into Write the keyword" width="1366"/>
+                <img src="502a74bdc10c3fb0d3706ee1f2122507c1cd60369f45207dddf4f306ea67f9ed.png" title=" Tania Ruiz Sanchez clicks on Click Store" width="1366"/>
+                <img src="4b88942fb74009f65d714d6e47f946c8e08e60a61a1f54543960e933118c0a16.png" title=" Tania Ruiz Sanchez types 'ARROW_DOWN' in Click Store" width="1366"/>
+                <img src="4b88942fb74009f65d714d6e47f946c8e08e60a61a1f54543960e933118c0a16.png" title=" Tania Ruiz Sanchez types 'ARROW_DOWN' in Click Store" width="1366"/>
+                <img src="53f133b0692243a542d1ede3cdbbc6d32ff7edb550149f7be914d19c952c67ed.png" title=" Tania Ruiz Sanchez types 'ENTER' in Click Store" width="1366"/>
+                <img src="ba16731cd35c9f18c524e54a7a7a735e5e463a3de0e7112539b59190351784c0.png" title=" Tania Ruiz Sanchez clicks on Click Languaje" width="1366"/>
+                <img src="a3a6555b68f4644b5b9f336a7042a6f23d0a3ec26c08bca044b593c8d4b47b82.png" title=" Tania Ruiz Sanchez types 'ARROW_DOWN' in Click Languaje" width="1366"/>
+                <img src="a3a6555b68f4644b5b9f336a7042a6f23d0a3ec26c08bca044b593c8d4b47b82.png" title=" Tania Ruiz Sanchez types 'ARROW_DOWN' in Click Languaje" width="1366"/>
+                <img src="a3a6555b68f4644b5b9f336a7042a6f23d0a3ec26c08bca044b593c8d4b47b82.png" title=" Tania Ruiz Sanchez types 'ENTER' in Click Languaje" width="1366"/>
+                <img src="7b2ff64019b39aa27962dbb1b9557888f4a9c450e30b92cb9a34a04f6fe7c678.png" title=" Tania Ruiz Sanchez clicks on Click boton Filter" width="1366"/>
+                <img src="cff638ccaa43502b144671bfcd05445b5f9a496625aa1e8c01e36d39a776913a.png" title=" Tania Ruiz Sanchez clicks on Click boton edit" width="1366"/>
+                <img src="71a3d991506244cb61e037141fc7d3cefe29947ef886126c07ce884e875900c7.png" title=" Tania Ruiz Sanchez clicks on Click boton edit" width="1366"/>
+                <img src="45e7f7c96c84510eab3fc1f9d2671e4a1a520aa94aeeb7d2bf1c133cd6cd309b.png" title=" Tania Ruiz Sanchez enters 'category_id=18' into Write the query edit" width="1366"/>
+                <img src="1e77c0af16133da165baac4c5011580f940e5f1b72a020c1b1ebb0ff60ca2441.png" title=" Tania Ruiz Sanchez enters 'NO' into Write the keyword edit" width="1366"/>
+                <img src="18fa88aa854695573f5e01441a71c23b24cf6c8a0aa5ed001afdd09cfdc2fee1.png" title=" Tania Ruiz Sanchez clicks on Select the Store edit" width="1366"/>
+                <img src="43ba284d9fa65a46fd41983adf40dec9216b27a13ce136eb7914cdec4faa25f5.png" title=" Tania Ruiz Sanchez types 'ARROW_DOWN' in Select the Store edit" width="1366"/>
+                <img src="3123243825952db4ee84a5f26d37548b6d364b292fa2e9c4138e87bcdb88e635.png" title=" Tania Ruiz Sanchez types 'ENTER' in Select the Store edit" width="1366"/>
+                <img src="5862449ad7940fca03e4232dba143aeb440a55b017699f81881002d717dca23a.png" title=" Tania Ruiz Sanchez clicks on Select the Languaje edit" width="1366"/>
+                <img src="05d5411f9b8dff0ac12bdef70d762cb38a8920dee0d7ad064a773c4f2ecff5a1.png" title=" Tania Ruiz Sanchez types 'ARROW_DOWN' in Select the Languaje edit" width="1366"/>
+                <img src="d0ca050dcd154cb7e9bf0396069eed5696e5043f0f8a121a9a648fbcb12f0f7a.png" title=" Tania Ruiz Sanchez types 'ENTER' in Select the Languaje edit" width="1366"/>
+                <img src="488461c2d084ad466c9f36fbb02d8866dad956dde898819ec551b83e0df8e86d.png" title=" Tania Ruiz Sanchez clicks on Click boton Save" width="1366"/>
+                <img src="488461c2d084ad466c9f36fbb02d8866dad956dde898819ec551b83e0df8e86d.png" title=" Tania ruiz sanchez filter edit (completed)" width="1366"/>
+                <img src="488461c2d084ad466c9f36fbb02d8866dad956dde898819ec551b83e0df8e86d.png" title=" When She enters the data she wants to edit
+| username | password | seourl | query | keyword | store | language | queryedit | keywordedit |
+| demo | demo | SEO URL | product_id=47 | hp-lp3065 | Default | English | category_id=18 | NO | (completed)" width="1366"/>
+                <img src="488461c2d084ad466c9f36fbb02d8866dad956dde898819ec551b83e0df8e86d.png" title=" Then She displays a warning message" width="1366"/>
+                <img src="488461c2d084ad466c9f36fbb02d8866dad956dde898819ec551b83e0df8e86d.png" title=" Example: {username=demo, password=demo, seourl=SEO URL, query=product_id=47, keyword=hp-lp3065, store=Default, language=English, queryedit=category_id=18, keywordedit=NO} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>

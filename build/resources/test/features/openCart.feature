@@ -18,5 +18,18 @@ Feature: openCart
       | <seourllist> |
 
     Examples:
-      | username | password | seourl  | query         | keyword   | store   | language |seourllist   |
-      | demo     | demo     | SEO URL | product_id=47 | hp-lp3065 | Default | English  |SEO URL List |
+      | username | password | seourl  | query         | keyword   | store   | language | seourllist   |
+      | demo     | demo     | SEO URL | product_id=47 | hp-lp3065 | Default | English  | SEO URL List |
+
+  @scenario2
+  Scenario Outline: filter to edit
+    Given Tania wants to edit data from the list consulted in SEO URL
+    When She enters the data she wants to edit
+      | username   | password   | seourl   | query   | keyword   | store   | language   | queryedit   | keywordedit   |
+      | <username> | <password> | <seourl> | <query> | <keyword> | <store> | <language> | <queryedit> | <keywordedit> |
+
+    Then She displays a warning message
+
+    Examples:
+      | username |  password | seourl  | query          | keyword         | store   | language | queryedit      | keywordedit |
+      | demo     |  demo     | SEO URL | product_id=47  | hp-lp3065       | Default | English  | category_id=18 | NO          |

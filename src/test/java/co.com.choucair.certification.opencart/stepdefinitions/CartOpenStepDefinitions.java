@@ -25,16 +25,30 @@ public void setStage() { OnStage.setTheStage(new OnlineCast()); }
         OnStage.theActorCalled("Tania Ruiz Sanchez").wasAbleTo(OpenUp.thePage());
     }
 
+    @Given("^Tania wants to edit data from the list consulted in SEO URL$")
+    public void taniaWantsToEditDataFromTheListConsultedInSEOURL() {
+        OnStage.theActorCalled("Tania Ruiz Sanchez").wasAbleTo(OpenUp.thePage());
+    }
+
 
     @When("^She enter the data in the filter field$")
     public void sheEnterTheDataInTheFilterField(List<DataFilterBD> dataFilterBD)  {
     OnStage.theActorInTheSpotlight().attemptsTo(Filter.the(dataFilterBD.get(0)));
+    }
+
+    @When("^She enters the data she wants to edit$")
+    public void sheEntersTheDataSheWantsToEdit(List<DataFilterBD> dataFilterBD)  {
         OnStage.theActorInTheSpotlight().attemptsTo(FilterEdit.the(dataFilterBD.get(0)));
     }
 
     @Then("^She visualizes the information in SEO URL List$")
     public void SheVisualizesTheInformationInSEOURLList(List<DataFilterBD> dataFilterBD) {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(AnswerFilter.filter(dataFilterBD.get(0))));
+    }
+
+    @Then("^She displays a warning message$")
+    public void sheDisplaysAWarningMessage() {
+        //OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(AnswerEdit.edit(dataFilterBD.get(0))));
     }
 
 }

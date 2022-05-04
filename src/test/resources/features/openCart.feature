@@ -29,11 +29,7 @@ Feature: openCart
       | <username> | <password> | <seourl> | <query> | <keyword> | <store> | <language> | <queryedit> | <keywordedit> |
 
     Then She displays a warning message
-      | warning   |
-      | <warning> |
 
     Examples:
-      | username |  password | seourl  | query          | keyword         | store   | language | queryedit      | keywordedit |warning |
-      | demo     |  demo     | SEO URL | product_id=47  | hp-lp3065       | Default | English  | category_id=18 | NO          |Warning |
-      | demo     |  demo     | SEO URL | product_id=41  | imac            | Default | English  | category_id=18 | SI          |Warning |
-      | demo     |  demo     | SEO URL | category_id=18 | laptop-notebook | Default | English  | product_id=41  | NONO        |Warning |
+      | username |  password | seourl  | query          | keyword         | store   | language | queryedit      | keywordedit |
+      | demo     |  demo     | SEO URL | product_id=47  | hp-lp3065       | Default | English  | category_id=18 | NO          |

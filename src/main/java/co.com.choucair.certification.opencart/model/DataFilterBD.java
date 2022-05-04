@@ -12,6 +12,7 @@ public class DataFilterBD {
     private String queryedit;
     private String keywordedit;
     private String seourllist;
+    //private String warning;
 
     public String getPassword() {return password;}
     public void setPassword(String password) {this.password = password;}
@@ -42,4 +43,7 @@ public class DataFilterBD {
 
     public String getSeourllist() {return seourllist;}
     public void setSeourllist(String seourllist) {this.seourllist = seourllist;}
+
+    //public String getWarning() {return warning;}
+    //public void setWarning(String warning) {this.warning = warning;}
 }
