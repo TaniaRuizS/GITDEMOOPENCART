@@ -25,16 +25,16 @@ Feature: openCart
   Scenario Outline: filter to edit
     Given Tania wants to edit data from the list consulted in SEO URL
     When She enters the data she wants to edit
-      | username   | password   | seourl   | query   | keyword   | store   | language   | queryedit   | keywordedit   |
-      | <username> | <password> | <seourl> | <query> | <keyword> | <store> | <language> | <queryedit> | <keywordedit> |
+      | username   | password   | seourl   | query   | keyword   | store   | language   | queryedit   | keywordedit   | storeedit   | languajeedit   |
+      | <username> | <password> | <seourl> | <query> | <keyword> | <store> | <language> | <queryedit> | <keywordedit> | <storeedit> | <languajeedit> |
 
     Then She displays a warning message
       | warning   |
       | <warning> |
 
     Examples:
-      | username | password | seourl  | query         | keyword   | store   | language | queryedit      | keywordedit | warning                                                   |
-      | demo     | demo     | SEO URL | product_id=47 | hp-lp3065 | Default | English  | category_id=18 | NO          | Warning: You do not have permission to modify SEO URL!\n× |
+      | username | password | seourl  | query         | keyword   | store   | language | queryedit      | keywordedit | storeedit | languajeedit | warning                                                   |
+      | demo     | demo     | SEO URL | product_id=47 | hp-lp3065 | Default | English  | category_id=18 | NO          | Default   | English      | Warning: You do not have permission to modify SEO URL!\n× |
 
 
   @scenario3

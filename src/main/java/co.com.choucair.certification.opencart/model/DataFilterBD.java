@@ -11,6 +11,8 @@ public class DataFilterBD {
     private String language;
     private String queryedit;
     private String keywordedit;
+    private String storeedit;
+    private String languajeedit;
     private String seourllist;
     private String warning;
     private String characters;
@@ -42,6 +44,12 @@ public class DataFilterBD {
 
     public String getKeywordedit() {return keywordedit;}
     public void setKeywordedit(String keywordedit) {this.keywordedit = keywordedit;}
+
+    public String getStoreedit() {return storeedit;}
+    public void setStoreedit(String storeedit) {this.storeedit = storeedit;}
+
+    public String getLanguajeedit() {return languajeedit;}
+    public void setLanguajeedit(String languajeedit) {this.languajeedit = languajeedit;}
 
     public String getSeourllist() {return seourllist;}
     public void setSeourllist(String seourllist) {this.seourllist = seourllist;}

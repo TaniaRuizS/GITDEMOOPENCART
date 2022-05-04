@@ -38,12 +38,8 @@ public class FilterEdit implements Task {
         actor.attemptsTo(Click.on(FilterEditData.BUTTON_EDIT));
         actor.attemptsTo(Enter.theValue(dataFilterBD.getQueryedit()).into(FilterEditData.QUERY_EDIT));
         actor.attemptsTo(Enter.theValue(dataFilterBD.getKeywordedit()).into(FilterEditData.KEYWORD_EDIT));
-        actor.attemptsTo(Click.on(FilterEditData.SELECT_STORE_EDIT));
-        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterEditData.SELECT_STORE_EDIT));
-        actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterEditData.SELECT_STORE_EDIT));
-        actor.attemptsTo(Click.on(FilterEditData.SELECT_LANGUAJE_EDIT));
-        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterEditData.SELECT_LANGUAJE_EDIT));
-        actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterEditData.SELECT_LANGUAJE_EDIT));
+        selectStoreEdit(actor);
+        selectLanguajeEdit(actor);
         actor.attemptsTo(Click.on(FilterEditData.BUTTON_SAVE));
     }
     public void selectSeoUrl(Actor actor) {
@@ -60,12 +56,30 @@ public class FilterEdit implements Task {
                 located(By.xpath(String.format(xpath, store)));
         actor.attemptsTo(Click.on(select_store));
     }
+    public void selectStoreEdit(Actor actor) {
+        String storeedit = dataFilterBD.getStoreedit();
+        String xpath = "//option[contains(text(),'%s')]";
+        Target select_storeedit = Target.the("Select Store Edit").
+                located(By.xpath(String.format(xpath, storeedit)));
+        actor.attemptsTo(Click.on(select_storeedit));
+    }
+
+
     public void selectLanguaje(Actor actor) {
-        String store = dataFilterBD.getLanguage();
+        String languaje = dataFilterBD.getLanguage();
         String xpath = "//option[contains(text(),'%s')]";
         Target select_languaje = Target.the("Select Languaje").
-                located(By.xpath(String.format(xpath, store)));
+                located(By.xpath(String.format(xpath, languaje)));
         actor.attemptsTo(Click.on(select_languaje));
     }
+
+    public void selectLanguajeEdit(Actor actor) {
+        String languajeedit = dataFilterBD.getLanguajeedit();
+        String xpath = "//option[contains(text(),'%s')]";
+        Target select_languajeedit = Target.the("Select Languaje edit").
+                located(By.xpath(String.format(xpath, languajeedit)));
+        actor.attemptsTo(Click.on(select_languajeedit));
+    }
+
 }
 
