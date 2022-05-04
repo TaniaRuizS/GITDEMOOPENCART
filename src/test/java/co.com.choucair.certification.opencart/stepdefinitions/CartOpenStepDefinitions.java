@@ -1,12 +1,14 @@
 package co.com.choucair.certification.opencart.stepdefinitions;
 
 import co.com.choucair.certification.opencart.model.DataFilterBD;
+import co.com.choucair.certification.opencart.questions.Answer;
 import co.com.choucair.certification.opencart.tasks.Filter;
 import co.com.choucair.certification.opencart.tasks.OpenUp;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
@@ -28,8 +30,9 @@ public void setStage() { OnStage.setTheStage(new OnlineCast()); }
     OnStage.theActorInTheSpotlight().attemptsTo(Filter.the(dataFilterBD.get(0)));
     }
 
-    @Then("^She looks for the information on the filter button$")
-    public void sheLooksForTheInformationOnTheFilterButton() {
+    @Then("^She visualizes the information in SEO URL List$")
+    public void SheVisualizesTheInformationInSEOURLList(List<DataFilterBD> dataFilterBD) {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.filter(dataFilterBD.get(0))));
     }
 
 }

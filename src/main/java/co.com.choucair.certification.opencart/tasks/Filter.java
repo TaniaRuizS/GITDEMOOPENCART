@@ -43,7 +43,10 @@ public class Filter implements Task {
         actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterData.CLICK_LANGUAJE));
         actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterData.CLICK_LANGUAJE));
         actor.attemptsTo(Click.on(FilterData.BUTTON_FILTER));
+    }
 
+        /*
+        //CP002
         actor.attemptsTo(Click.on(FilterData.SELECT_CHECKBOX));
         actor.attemptsTo(Click.on(FilterData.BUTTON_EDIT));
         actor.attemptsTo(Enter.theValue(dataFilterBD.getQueryedit()).into(FilterData.QUERY_EDIT));
@@ -54,9 +57,7 @@ public class Filter implements Task {
         actor.attemptsTo(Click.on(FilterData.SELECT_LANGUAJE_EDIT));
         actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterData.SELECT_LANGUAJE_EDIT));
         actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterData.SELECT_LANGUAJE_EDIT));
-        actor.attemptsTo(Click.on(FilterData.BUTTON_SAVE));
-
-    }
+        actor.attemptsTo(Click.on(FilterData.BUTTON_SAVE)); */
 
     public void selectSeoUrl(Actor actor) {
         String seoUrl = dataFilterBD.getSeourl();
@@ -65,6 +66,5 @@ public class Filter implements Task {
                 located(By.xpath(String.format(xpath, seoUrl)));
         actor.attemptsTo(Click.on(select_seoUrl));
     }
-
 
 }

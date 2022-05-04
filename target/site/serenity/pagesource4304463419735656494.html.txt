@@ -1,0 +1,292 @@
+<html dir="ltr" lang="en"><head>
+<meta charset="UTF-8">
+<title>SEO URL</title>
+<base href="https://demo.opencart.com/admin/">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="view/javascript/jquery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="view/javascript/bootstrap/js/bootstrap.min.js"></script>
+<link href="view/stylesheet/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="view/javascript/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<script src="view/javascript/jquery/datetimepicker/moment/moment.min.js" type="text/javascript"></script>
+<script src="view/javascript/jquery/datetimepicker/moment/moment-with-locales.min.js" type="text/javascript"></script>
+<script src="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<link href="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen">
+<link type="text/css" href="view/stylesheet/stylesheet.css" rel="stylesheet" media="screen">
+<script src="view/javascript/common.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="container">
+<header id="header" class="navbar navbar-static-top">
+<div class="container-fluid">
+<div id="header-logo" class="navbar-header"><a href="https://demo.opencart.com/admin/index.php?route=common/dashboard&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK" class="navbar-brand"><img src="view/image/logo.png" alt="OpenCart" title="OpenCart"></a></div>
+<a href="#" id="button-menu" class="hidden-md hidden-lg"><span class="fa fa-bars"></span></a>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://demo.opencart.com/image/cache/profile-45x45.png" alt="demo demo" title="demo" id="user-profile" class="img-circle">demo demo <i class="fa fa-caret-down fa-fw"></i></a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="https://demo.opencart.com/admin/index.php?route=common/profile&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK"><i class="fa fa-user-circle-o fa-fw"></i> Your Profile</a></li>
+<li role="separator" class="divider"></li>
+<li class="dropdown-header">Stores</li>
+<li><a href="https://demo.opencart.com/" target="_blank">Your Store</a></li>
+<li role="separator" class="divider"></li>
+<li class="dropdown-header">Help</li>
+<li><a href="http://www.opencart.com" target="_blank"><i class="fa fa-opencart fa-fw"></i> OpenCart Homepage</a></li>
+<li><a href="http://docs.opencart.com" target="_blank"><i class="fa fa-file-text-o fa-fw"></i> Documentation</a></li>
+<li><a href="http://forum.opencart.com" target="_blank"><i class="fa fa-comments-o fa-fw"></i> Support Forum</a></li>
+</ul>
+</li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=common/logout&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK"><i class="fa fa-sign-out"></i> <span class="hidden-xs hidden-sm hidden-md">Logout</span></a></li>
+</ul>
+</div>
+</header>
+<nav id="column-left">
+<div id="navigation"><span class="fa fa-bars"></span> Navigation</div>
+<ul id="menu" class="in">
+<li id="menu-dashboard"><a href="https://demo.opencart.com/admin/index.php?route=common/dashboard&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK"><i class="fa fa-dashboard fw"></i> Dashboard</a> </li>
+<li id="menu-catalog"><a href="#collapse1" data-toggle="collapse" class="parent collapsed"><i class="fa fa-tags fw"></i> Catalog</a> <ul id="collapse1" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/category&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Categories</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/product&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Products</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/recurring&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Recurring Profiles</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/filter&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Filters</a> </li>
+<li><a href="#collapse5" data-toggle="collapse" class="parent collapsed">Attributes</a> <ul id="collapse5" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/attribute&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Attributes</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/attribute_group&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Attribute Groups</a> </li>
+</ul>
+</li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/option&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Options</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/manufacturer&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Manufacturers</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/download&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Downloads</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/review&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Reviews</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/information&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Information</a> </li>
+</ul>
+</li>
+<li id="menu-extension"><a href="#collapse14" data-toggle="collapse" class="parent collapsed"><i class="fa fa-puzzle-piece fw"></i> Extensions</a> <ul id="collapse14" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketplace/marketplace&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Marketplace</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketplace/installer&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Installer</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketplace/extension&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Extensions</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketplace/modification&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Modifications</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketplace/event&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Events</a> </li>
+</ul>
+</li>
+<li id="menu-design" class="active"><a href="#collapse20" data-toggle="collapse" class="parent collapsed"><i class="fa fa-television fw"></i> Design</a> <ul id="collapse20" class="collapse in">
+<li><a href="https://demo.opencart.com/admin/index.php?route=design/layout&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Layouts</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=design/theme&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Theme Editor</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=design/translation&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Language Editor</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=design/banner&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Banners</a> </li>
+<li class="active"><a href="https://demo.opencart.com/admin/index.php?route=design/seo_url&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">SEO URL</a> </li>
+</ul>
+</li>
+<li id="menu-sale"><a href="#collapse26" data-toggle="collapse" class="parent collapsed"><i class="fa fa-shopping-cart fw"></i> Sales</a> <ul id="collapse26" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=sale/order&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Orders</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=sale/recurring&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Recurring Profiles</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=sale/return&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Returns</a> </li>
+<li><a href="#collapse29" data-toggle="collapse" class="parent collapsed">Gift Vouchers</a> <ul id="collapse29" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=sale/voucher&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Gift Vouchers</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=sale/voucher_theme&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Voucher Themes</a> </li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-customer"><a href="#collapse33" data-toggle="collapse" class="parent collapsed"><i class="fa fa-user fw"></i> Customers</a> <ul id="collapse33" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=customer/customer&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Customers</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=customer/customer_group&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Customer Groups</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=customer/customer_approval&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Customer Approvals</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=customer/custom_field&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Custom Fields</a> </li>
+</ul>
+</li>
+<li id="menu-marketing"><a href="#collapse38" data-toggle="collapse" class="parent collapsed"><i class="fa fa-share-alt fw"></i> Marketing</a> <ul id="collapse38" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketing/marketing&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Marketing</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketing/coupon&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Coupons</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketing/contact&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Mail</a> </li>
+</ul>
+</li>
+<li id="menu-system"><a href="#collapse42" data-toggle="collapse" class="parent collapsed"><i class="fa fa-cog fw"></i> System</a> <ul id="collapse42" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=setting/store&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Settings</a> </li>
+<li><a href="#collapse43" data-toggle="collapse" class="parent collapsed">Localisation</a> <ul id="collapse43" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/location&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Store Location</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/language&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Languages</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/currency&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Currencies</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/stock_status&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Stock Statuses</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/order_status&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Order Statuses</a> </li>
+<li><a href="#collapse48" data-toggle="collapse" class="parent collapsed">Returns</a> <ul id="collapse48" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/return_status&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Return Statuses</a></li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/return_action&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Return Actions</a></li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/return_reason&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Return Reasons</a></li>
+</ul>
+</li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/country&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Countries</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/zone&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Zones</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/geo_zone&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Geo Zones</a> </li>
+<li><a href="#collapse52" data-toggle="collapse" class="parent collapsed">Taxes</a> <ul id="collapse52" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/tax_class&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Tax Classes</a></li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/tax_rate&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Tax Rates</a></li>
+</ul>
+</li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/length_class&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Length Classes</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/weight_class&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Weight Classes</a> </li>
+</ul>
+</li>
+<li><a href="#collapse56" data-toggle="collapse" class="parent collapsed">Maintenance</a> <ul id="collapse56" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=tool/backup&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Backup / Restore</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=tool/upload&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Uploads</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=tool/log&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Error Logs</a> </li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-report"><a href="#collapse61" data-toggle="collapse" class="parent collapsed"><i class="fa fa-bar-chart-o fw"></i> Reports</a> <ul id="collapse61" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=report/report&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Reports</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=report/online&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Who's Online</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=report/statistics&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Statistics</a> </li>
+</ul>
+</li>
+</ul>
+<div id="stats">
+<ul>
+<li>
+<div>Orders Completed <span class="pull-right">0%</span></div>
+<div class="progress">
+<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">0%</span></div>
+</div>
+</li>
+<li>
+<div>Orders Processing <span class="pull-right">0%</span></div>
+<div class="progress">
+<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">0%</span></div>
+</div>
+</li>
+<li>
+<div>Other Statuses <span class="pull-right">0%</span></div>
+<div class="progress">
+<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">0%</span></div>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+<div id="content">
+<div class="page-header">
+<div class="container-fluid">
+<div class="pull-right">
+<button type="button" data-toggle="tooltip" title="" onclick="$('#filter-seo').toggleClass('hidden-sm hidden-xs');" class="btn btn-default hidden-md hidden-lg" data-original-title="Filter"><i class="fa fa-filter"></i></button>
+<a href="https://demo.opencart.com/admin/index.php?route=design/seo_url/add&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK&amp;filter_query=product_id%3D47&amp;filter_keyword=hp-lp3065&amp;filter_store_id=0&amp;filter_language_id=1" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Add New"><i class="fa fa-plus"></i></a>
+<button type="button" data-toggle="tooltip" title="" class="btn btn-danger" onclick="confirm('Are you sure?') ? $('#form-url-alias').submit() : false;" data-original-title="Delete"><i class="fa fa-trash-o"></i></button>
+</div>
+<h1>SEO URL</h1>
+<ul class="breadcrumb">
+<li><a href="https://demo.opencart.com/admin/index.php?route=common/dashboard&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK">Home</a></li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=design/seo_url&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK&amp;filter_query=product_id%3D47&amp;filter_keyword=hp-lp3065&amp;filter_store_id=0&amp;filter_language_id=1">SEO URL</a></li>
+</ul>
+</div>
+</div>
+<div class="container-fluid"> <div class="row">
+<div id="filter-seo" class="col-md-3 col-md-push-9 col-sm-12 hidden-sm hidden-xs">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><i class="fa fa-filter"></i> Filter</h3>
+</div>
+<div class="panel-body">
+<div class="form-group">
+<label class="control-label" for="input-query">Query</label>
+<input type="text" name="filter_query" value="product_id=47" placeholder="Query" id="input-query" class="form-control">
+</div>
+<div class="form-group">
+<label class="control-label" for="input-keyword">Keyword</label>
+<input type="text" name="filter_keyword" value="hp-lp3065" placeholder="Keyword" id="input-keyword" class="form-control">
+</div>
+<div class="form-group">
+<label class="control-label" for="input-store">Store</label>
+<select name="filter_store_id" id="input-store" class="form-control">
+<option value=""></option>
+<option value="0" selected="selected">Default</option>
+</select>
+</div>
+<div class="form-group">
+<label class="control-label" for="input-language">Language</label>
+<select name="filter_language_id" id="input-language" class="form-control">
+<option value=""></option>
+<option value="1" selected="selected">English</option>
+</select>
+</div>
+<div class="text-right">
+<button type="button" id="button-filter" class="btn btn-default"><i class="fa fa-filter"></i> Filter</button>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-9 col-md-pull-3 col-sm-12">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><i class="fa fa-list"></i> SEO URL List</h3>
+</div>
+<div class="panel-body">
+<form action="https://demo.opencart.com/admin/index.php?route=design/seo_url/delete&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK&amp;filter_query=product_id%3D47&amp;filter_keyword=hp-lp3065&amp;filter_store_id=0&amp;filter_language_id=1" method="post" enctype="multipart/form-data" id="form-url-alias">
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+<thead>
+<tr>
+<td style="width: 1px;" class="text-center"><input type="checkbox" onclick="$('input[name*=\'selected\']').prop('checked', this.checked);"></td>
+<td class="text-left"><a href="https://demo.opencart.com/admin/index.php?route=design/seo_url&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK&amp;sort=query&amp;filter_query=product_id%3D47&amp;filter_keyword=hp-lp3065&amp;filter_store_id=0&amp;filter_language_id=1&amp;order=DESC">Query</a></td>
+<td class="text-left"><a href="https://demo.opencart.com/admin/index.php?route=design/seo_url&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK&amp;sort=keyword&amp;filter_query=product_id%3D47&amp;filter_keyword=hp-lp3065&amp;filter_store_id=0&amp;filter_language_id=1&amp;order=DESC" class="asc">Keyword</a> </td>
+<td class="text-left"><a href="https://demo.opencart.com/admin/index.php?route=design/seo_url&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK&amp;sort=store&amp;filter_query=product_id%3D47&amp;filter_keyword=hp-lp3065&amp;filter_store_id=0&amp;filter_language_id=1&amp;order=DESC">Store</a></td>
+<td class="text-left"><a href="https://demo.opencart.com/admin/index.php?route=design/seo_url&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK&amp;sort=language&amp;filter_query=product_id%3D47&amp;filter_keyword=hp-lp3065&amp;filter_store_id=0&amp;filter_language_id=1&amp;order=DESC">Language</a></td>
+<td class="text-right">Action</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-center"> <input type="checkbox" name="selected[]" value="840">
+</td>
+<td class="text-left">product_id=47</td>
+<td class="text-left">hp-lp3065</td>
+<td class="text-left">Default</td>
+<td class="text-left">English</td>
+<td class="text-right"><a href="https://demo.opencart.com/admin/index.php?route=design/seo_url/edit&amp;user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK&amp;seo_url_id=840&amp;filter_query=product_id%3D47&amp;filter_keyword=hp-lp3065&amp;filter_store_id=0&amp;filter_language_id=1" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</form>
+<div class="row">
+<div class="col-sm-6 text-left"></div>
+<div class="col-sm-6 text-right">Showing 1 to 1 of 1 (1 Pages)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript"><!--
+$('#button-filter').on('click', function() {
+	var url = 'index.php?route=design/seo_url&user_token=9BTj65cmtSIw8ElqLAbawGyI9S0466TK';
+
+	var filter_query = $('input[name=\'filter_query\']').val();
+
+	if (filter_query) {
+		url += '&filter_query=' + encodeURIComponent(filter_query);
+	}
+
+	var filter_keyword = $('input[name=\'filter_keyword\']').val();
+
+	if (filter_keyword) {
+		url += '&filter_keyword=' + encodeURIComponent(filter_keyword);
+	}
+
+	var filter_store_id = $('select[name=\'filter_store_id\']').val();
+
+	if (filter_store_id) {
+		url += '&filter_store_id=' + encodeURIComponent(filter_store_id);
+	}
+	
+	var filter_language_id = $('select[name=\'filter_language_id\']').val();
+
+	if (filter_language_id) {
+		url += '&filter_language_id=' + encodeURIComponent(filter_language_id);
+	}
+
+	location = url;
+});
+//--></script>
+</div>
+<footer id="footer"><a href="http://www.opencart.com">OpenCart</a> © 2009-2022 All Rights Reserved.<br>Version 3.0.1.1</footer></div>
+
+</body></html>
