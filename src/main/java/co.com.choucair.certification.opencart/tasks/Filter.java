@@ -46,11 +46,11 @@ public class Filter implements Task {
     }
 
     public void selectSeoUrl(Actor actor) {
-            String seoUrl = dataFilterBD.getSeourl();
-            String xpath = "//a[contains(text(),'%s')]";
-            Target select_seoUrl = Target.the("Select SEO URL").
-                    located(By.xpath(String.format(xpath, seoUrl)));
-            actor.attemptsTo(Click.on(select_seoUrl));
+        String seoUrl = dataFilterBD.getSeourl();
+        String xpath = "//a[contains(text(),'%s')]";
+        Target select_seoUrl = Target.the("Select SEO URL").
+                located(By.xpath(String.format(xpath, seoUrl)));
+        actor.attemptsTo(Click.on(select_seoUrl));
     }
 
 
