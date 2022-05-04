@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 
 public class FilterData extends PageObject {
 
+    //CP001
     public static final Target USER_NAME =Target.the("enter username").located
             (By.id("input-username"));
     public static final Target PASSWORD =Target.the("enter password").located
@@ -30,6 +31,24 @@ public class FilterData extends PageObject {
     public static final Target BUTTON_FILTER =Target.the("Click boton Filter").located
             (By.id("button-filter"));
 
-    public static final Target SEOURL_LIST =Target.the("Click on showing pages").located
-            (By.xpath("//div[text()= 'SEO URL List']"));
+    //RESPUESTA CP 001
+    //public static final Target SEOURL_LIST =Target.the("Click on showing pages").located
+            //(By.xpath("//div[text()= 'SEO URL List']"));
+
+    //CP002
+    public static final Target SELECT_CHECKBOX =Target.the("Click boton edit").located
+            (By.name("selected[]"));
+    public static final Target BUTTON_EDIT =Target.the("Click boton edit").located
+            (By.xpath("//i[@class= 'fa fa-pencil']"));
+    public static final Target QUERY_EDIT =Target.the("Write the query edit").located
+            (By.name("query"));
+    public static final Target KEYWORD_EDIT =Target.the("Write the keyword edit").located
+            (By.name("keyword"));
+    public static final Target SELECT_STORE_EDIT =Target.the("Select the Store edit").located
+            (By.name("store_id"));
+    public static final Target SELECT_LANGUAJE_EDIT =Target.the("Select the Languaje edit").located
+            (By.name("language_id"));
+    public static final Target BUTTON_SAVE =Target.the("Click boton Save").located
+            (By.xpath("//button[@class= 'btn btn-primary']"));
+
 }

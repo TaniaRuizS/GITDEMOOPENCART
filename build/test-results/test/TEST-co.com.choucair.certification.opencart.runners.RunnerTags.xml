@@ -5,7 +5,7 @@
 
 3 Scenarios (?[32m3 passed?[0m)
 9 Steps (?[32m9 passed?[0m)
-0m49,753s
+0m46,741s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -38,8 +38,8 @@
 TEST STARTED: Enter data to filter
 -------------------------------------------------------------------(opencart;enter-data-to-filter)
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2b7064ba
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@14a9b504
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@51c44264
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7de9f17e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6803a0c9
 [pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 ]]></system-err>
 </testsuite>

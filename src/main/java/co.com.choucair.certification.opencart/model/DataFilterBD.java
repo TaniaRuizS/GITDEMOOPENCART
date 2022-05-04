@@ -9,6 +9,8 @@ public class DataFilterBD {
     private String keyword;
     private String store;
     private String language;
+    private String queryedit;
+    private String keywordedit;
 
     public String getPassword() {return password;}
     public void setPassword(String password) {this.password = password;}
@@ -30,4 +32,10 @@ public class DataFilterBD {
 
     public String getLanguage() {return language;}
     public void setLanguage(String language) {this.language = language;}
+
+    public String getQueryedit() {return queryedit;}
+    public void setQueryedit(String queryedit) {this.queryedit = queryedit;}
+
+    public String getKeywordedit() {return keywordedit;}
+    public void setKeywordedit(String keywordedit) {this.keywordedit = keywordedit;}
 }

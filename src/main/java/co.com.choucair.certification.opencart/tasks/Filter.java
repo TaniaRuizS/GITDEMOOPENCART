@@ -43,6 +43,19 @@ public class Filter implements Task {
         actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterData.CLICK_LANGUAJE));
         actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterData.CLICK_LANGUAJE));
         actor.attemptsTo(Click.on(FilterData.BUTTON_FILTER));
+
+        actor.attemptsTo(Click.on(FilterData.SELECT_CHECKBOX));
+        actor.attemptsTo(Click.on(FilterData.BUTTON_EDIT));
+        actor.attemptsTo(Enter.theValue(dataFilterBD.getQueryedit()).into(FilterData.QUERY_EDIT));
+        actor.attemptsTo(Enter.theValue(dataFilterBD.getKeywordedit()).into(FilterData.KEYWORD_EDIT));
+        actor.attemptsTo(Click.on(FilterData.SELECT_STORE_EDIT));
+        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterData.SELECT_STORE_EDIT));
+        actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterData.SELECT_STORE_EDIT));
+        actor.attemptsTo(Click.on(FilterData.SELECT_LANGUAJE_EDIT));
+        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterData.SELECT_LANGUAJE_EDIT));
+        actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterData.SELECT_LANGUAJE_EDIT));
+        actor.attemptsTo(Click.on(FilterData.BUTTON_SAVE));
+
     }
 
     public void selectSeoUrl(Actor actor) {
