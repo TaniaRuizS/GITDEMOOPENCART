@@ -6,17 +6,17 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 
-public class Answer implements Question <Boolean> {
+public class AnswerFilter implements Question <Boolean> {
 
     private DataFilterBD dataFilterBD;
 
-    public Answer(DataFilterBD dataFilterBD) {
+    public AnswerFilter(DataFilterBD dataFilterBD) {
         this.dataFilterBD = dataFilterBD;
     }
 
 
-    public static Answer filter(DataFilterBD dataFilterBD) {
-        return new Answer(dataFilterBD);
+    public static AnswerFilter filter(DataFilterBD dataFilterBD) {
+        return new AnswerFilter(dataFilterBD);
     }
 
     @Override

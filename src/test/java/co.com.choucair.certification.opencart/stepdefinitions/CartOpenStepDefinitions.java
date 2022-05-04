@@ -1,8 +1,9 @@
 package co.com.choucair.certification.opencart.stepdefinitions;
 
 import co.com.choucair.certification.opencart.model.DataFilterBD;
-import co.com.choucair.certification.opencart.questions.Answer;
+import co.com.choucair.certification.opencart.questions.AnswerFilter;
 import co.com.choucair.certification.opencart.tasks.Filter;
+import co.com.choucair.certification.opencart.tasks.FilterEdit;
 import co.com.choucair.certification.opencart.tasks.OpenUp;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -28,11 +29,12 @@ public void setStage() { OnStage.setTheStage(new OnlineCast()); }
     @When("^She enter the data in the filter field$")
     public void sheEnterTheDataInTheFilterField(List<DataFilterBD> dataFilterBD)  {
     OnStage.theActorInTheSpotlight().attemptsTo(Filter.the(dataFilterBD.get(0)));
+        OnStage.theActorInTheSpotlight().attemptsTo(FilterEdit.the(dataFilterBD.get(0)));
     }
 
     @Then("^She visualizes the information in SEO URL List$")
     public void SheVisualizesTheInformationInSEOURLList(List<DataFilterBD> dataFilterBD) {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.filter(dataFilterBD.get(0))));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(AnswerFilter.filter(dataFilterBD.get(0))));
     }
 
 }
