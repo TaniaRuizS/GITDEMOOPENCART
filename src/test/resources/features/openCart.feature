@@ -21,6 +21,7 @@ Feature: openCart
       | username | password | seourl  | query             | keyword   | store   | language | seourllist   |
       | demo     | demo     | SEO URL | product_id=47     | hp-lp3065 | Default | English  | SEO URL List |
       | demo     | demo     | SEO URL | manufacturer_id=9 |           | Default | English  | SEO URL List |
+      | demo     | demo     | SEO URL | product_id=47     | hp-lp3065 |         | English  | SEO URL List |
 
   @scenario2
   Scenario Outline: filter to edit
