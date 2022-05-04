@@ -1,0 +1,12 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Maven
+target/
+build/
+dist/
+
+# JetBrains IDE
+.idea/
+.gradle/
