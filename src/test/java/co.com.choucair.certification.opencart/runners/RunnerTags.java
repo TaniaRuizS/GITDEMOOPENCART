@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions (
         features = "src\\test\\resources\\features\\openCart.feature",
-        tags = "@scenario1",
+        tags = "@scenario2",
         glue = "co.com.choucair.certification.opencart.stepdefinitions",
         snippets = SnippetType.CAMELCASE)
 

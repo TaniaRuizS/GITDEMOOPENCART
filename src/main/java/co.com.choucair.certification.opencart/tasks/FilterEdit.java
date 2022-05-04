@@ -31,14 +31,8 @@ public class FilterEdit implements Task {
         selectSeoUrl(actor);
         actor.attemptsTo(Enter.theValue(dataFilterBD.getQuery()).into(FilterEditData.INPUT_QUERY));
         actor.attemptsTo(Enter.theValue(dataFilterBD.getKeyword()).into(FilterEditData.INPUT_KEYWORD));
-        actor.attemptsTo(Click.on(FilterEditData.CLICK_STORE));
-        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterEditData.CLICK_STORE));
-        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterEditData.CLICK_STORE));
-        actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterEditData.CLICK_STORE));
-        actor.attemptsTo(Click.on(FilterEditData.CLICK_LANGUAJE));
-        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterEditData.CLICK_LANGUAJE));
-        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterEditData.CLICK_LANGUAJE));
-        actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterEditData.CLICK_LANGUAJE));
+        selectStore(actor);
+        selectLanguaje(actor);
         actor.attemptsTo(Click.on(FilterEditData.BUTTON_FILTER));
         actor.attemptsTo(Click.on(FilterEditData.SELECT_CHECKBOX));
         actor.attemptsTo(Click.on(FilterEditData.BUTTON_EDIT));
@@ -58,6 +52,20 @@ public class FilterEdit implements Task {
         Target select_seoUrl = Target.the("Select SEO URL").
                 located(By.xpath(String.format(xpath, seoUrl)));
         actor.attemptsTo(Click.on(select_seoUrl));
+    }
+    public void selectStore(Actor actor) {
+        String store = dataFilterBD.getStore();
+        String xpath = "//option[contains(text(),'%s')]";
+        Target select_store = Target.the("Select Store").
+                located(By.xpath(String.format(xpath, store)));
+        actor.attemptsTo(Click.on(select_store));
+    }
+    public void selectLanguaje(Actor actor) {
+        String store = dataFilterBD.getLanguage();
+        String xpath = "//option[contains(text(),'%s')]";
+        Target select_languaje = Target.the("Select Languaje").
+                located(By.xpath(String.format(xpath, store)));
+        actor.attemptsTo(Click.on(select_languaje));
     }
 }
 
