@@ -1,15 +1,16 @@
 package co.com.choucair.certification.opencart.tasks;
 
 import co.com.choucair.certification.opencart.model.DataFilterBD;
+import co.com.choucair.certification.opencart.userinterface.FilterData;
 import co.com.choucair.certification.opencart.userinterface.FilterEditData;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Hit;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+
 
 import net.serenitybdd.screenplay.targets.Target;
 
@@ -24,16 +25,16 @@ public class FilterEdit implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue(dataFilterBD.getUsername()).into(FilterEditData.USER_NAME));
-        actor.attemptsTo(Enter.theValue(dataFilterBD.getPassword()).into(FilterEditData.PASSWORD));
-        actor.attemptsTo(Click.on(FilterEditData.BUTTON_LOGIN));
-        actor.attemptsTo(Click.on(FilterEditData.CLICK_DESING));
+        actor.attemptsTo(Enter.theValue(dataFilterBD.getUsername()).into(FilterData.USER_NAME));
+        actor.attemptsTo(Enter.theValue(dataFilterBD.getPassword()).into(FilterData.PASSWORD));
+        actor.attemptsTo(Click.on(FilterData.BUTTON_LOGIN));
+        actor.attemptsTo(Click.on(FilterData.CLICK_DESING));
         selectSeoUrl(actor);
-        actor.attemptsTo(Enter.theValue(dataFilterBD.getQuery()).into(FilterEditData.INPUT_QUERY));
-        actor.attemptsTo(Enter.theValue(dataFilterBD.getKeyword()).into(FilterEditData.INPUT_KEYWORD));
+        actor.attemptsTo(Enter.theValue(dataFilterBD.getQuery()).into(FilterData.INPUT_QUERY));
+        actor.attemptsTo(Enter.theValue(dataFilterBD.getKeyword()).into(FilterData.INPUT_KEYWORD));
         selectStore(actor);
         selectLanguaje(actor);
-        actor.attemptsTo(Click.on(FilterEditData.BUTTON_FILTER));
+        actor.attemptsTo(Click.on(FilterData.BUTTON_FILTER));
         actor.attemptsTo(Click.on(FilterEditData.SELECT_CHECKBOX));
         actor.attemptsTo(Click.on(FilterEditData.BUTTON_EDIT));
         actor.attemptsTo(Enter.theValue(dataFilterBD.getQueryedit()).into(FilterEditData.QUERY_EDIT));

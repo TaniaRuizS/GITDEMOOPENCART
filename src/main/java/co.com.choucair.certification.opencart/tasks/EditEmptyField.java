@@ -2,6 +2,7 @@ package co.com.choucair.certification.opencart.tasks;
 
 import co.com.choucair.certification.opencart.model.DataFilterBD;
 import co.com.choucair.certification.opencart.userinterface.EditEmptyFieldData;
+import co.com.choucair.certification.opencart.userinterface.FilterData;
 import co.com.choucair.certification.opencart.userinterface.FilterEditData;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -23,25 +24,24 @@ public class EditEmptyField implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue(dataFilterBD.getUsername()).into(EditEmptyFieldData.USER_NAME));
-        actor.attemptsTo(Enter.theValue(dataFilterBD.getPassword()).into(EditEmptyFieldData.PASSWORD));
-        actor.attemptsTo(Click.on(EditEmptyFieldData.BUTTON_LOGIN));
-        actor.attemptsTo(Click.on(EditEmptyFieldData.CLICK_DESING));
+        actor.attemptsTo(Enter.theValue(dataFilterBD.getUsername()).into(FilterData.USER_NAME));
+        actor.attemptsTo(Enter.theValue(dataFilterBD.getPassword()).into(FilterData.PASSWORD));
+        actor.attemptsTo(Click.on(FilterData.BUTTON_LOGIN));
+        actor.attemptsTo(Click.on(FilterData.CLICK_DESING));
         selectSeoUrl(actor);
         actor.attemptsTo(Click.on(FilterEditData.SELECT_CHECKBOX));
         actor.attemptsTo(Click.on(FilterEditData.BUTTON_EDIT));
         actor.attemptsTo(Enter.theValue(dataFilterBD.getQueryedit()).into(FilterEditData.QUERY_EDIT));
         actor.attemptsTo(Enter.theValue(dataFilterBD.getKeywordedit()).into(FilterEditData.KEYWORD_EDIT));
-        actor.attemptsTo(Click.on(FilterEditData.SELECT_STORE_EDIT));
-        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterEditData.SELECT_STORE_EDIT));
-        actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterEditData.SELECT_STORE_EDIT));
-        actor.attemptsTo(Click.on(FilterEditData.SELECT_LANGUAJE_EDIT));
-        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FilterEditData.SELECT_LANGUAJE_EDIT));
-        actor.attemptsTo(Hit.the(Keys.ENTER).into(FilterEditData.SELECT_LANGUAJE_EDIT));
+        actor.attemptsTo(Click.on(EditEmptyFieldData.SELECT_STORE_EDIT));
+        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(EditEmptyFieldData.SELECT_STORE_EDIT));
+        actor.attemptsTo(Hit.the(Keys.ENTER).into(EditEmptyFieldData.SELECT_STORE_EDIT));
+        actor.attemptsTo(Click.on(EditEmptyFieldData.SELECT_LANGUAJE_EDIT));
+        actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(EditEmptyFieldData.SELECT_LANGUAJE_EDIT));
+        actor.attemptsTo(Hit.the(Keys.ENTER).into(EditEmptyFieldData.SELECT_LANGUAJE_EDIT));
         actor.attemptsTo(Click.on(FilterEditData.BUTTON_SAVE));
 
     }
-
     public void selectSeoUrl(Actor actor) {
         String seoUrl = dataFilterBD.getSeourl();
         String xpath = "//a[contains(text(),'%s')]";

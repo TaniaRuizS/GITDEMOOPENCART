@@ -8,11 +8,11 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Hit;
+
 
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+
 
 
 
@@ -38,6 +38,7 @@ public class Filter implements Task {
         selectLanguaje(actor);
         actor.attemptsTo(Click.on(FilterData.BUTTON_FILTER));
     }
+
     public void selectSeoUrl(Actor actor) {
         String seoUrl = dataFilterBD.getSeourl();
         String xpath = "//a[contains(text(),'%s')]";

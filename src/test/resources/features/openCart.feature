@@ -5,10 +5,11 @@
 Feature: openCart
   As a user I want to filter the different data of the SEO URL list
 
-  @scenario1
-
-  Scenario Outline: Enter data to filter
+  Background: Load the page
     Given Tania wants to filter data in the SEO URL list
+
+  @scenario1
+  Scenario Outline: Enter data to filter
     When She enter the data in the filter field
       | username   | password   | seourl   | query   | keyword   | store   | language   |
       | <username> | <password> | <seourl> | <query> | <keyword> | <store> | <language> |
@@ -21,11 +22,9 @@ Feature: openCart
       | username | password | seourl  | query             | keyword   | store   | language | seourllist   |
       | demo     | demo     | SEO URL | product_id=47     | hp-lp3065 | Default | English  | SEO URL List |
       | demo     | demo     | SEO URL | manufacturer_id=9 |           | Default | English  | SEO URL List |
-      | demo     | demo     | SEO URL | product_id=47     | hp-lp3065 |         | English  | SEO URL List |
 
   @scenario2
   Scenario Outline: filter to edit
-    Given Tania wants to edit data from the list consulted in SEO URL
     When She enters the data she wants to edit
       | username   | password   | seourl   | query   | keyword   | store   | language   | queryedit   | keywordedit   | storeedit   | languajeedit   |
       | <username> | <password> | <seourl> | <query> | <keyword> | <store> | <language> | <queryedit> | <keywordedit> | <storeedit> | <languajeedit> |
@@ -42,7 +41,6 @@ Feature: openCart
 
   @scenario3
   Scenario Outline: Edit information leaving mandatory fields empty
-    Given Tania wants to edit list data leaving mandatory fields empty
     When She enters the data she wants to edit leaving a mandatory field empty
       | username   | password   | seourl   | queryedit   | keywordedit   |
       | <username> | <password> | <seourl> | <queryedit> | <keywordedit> |
