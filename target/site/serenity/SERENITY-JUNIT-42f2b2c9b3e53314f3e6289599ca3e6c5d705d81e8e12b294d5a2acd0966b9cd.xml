@@ -1,1 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="openCart" skipped="0" tests="2" time="29.99" timestamp="2022-05-05 07:18:21"><testcase name="filter to edit"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="openCart" skipped="0" tests="2" time="20.1" timestamp="2022-05-06 09:22:20"><testcase name="filter to edit"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+co.com.choucair.certification.opencart.util.Utilities.selectSeoUrl(Utilities.java:23)&#13;
+co.com.choucair.certification.opencart.tasks.FilterEdit.performAs(FilterEdit.java:32)&#13;
+co.com.choucair.certification.opencart.stepdefinitions.CP2StepDefinitions.sheEntersTheDataSheWantsToEdit(CP2StepDefinitions.java:16)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

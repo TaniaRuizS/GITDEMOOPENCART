@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 06-05-2022 08:41</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 06-05-2022 09:22</span>
     <br style="clear:left"/>
 </div>
 
@@ -182,9 +182,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">filter to edit
+                                <span class="failing-color">filter to edit
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -205,6 +205,52 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.choucair.certification.opencart.util.Utilities.selectSeoUrl(Utilities.java:23)<br />co.com.choucair.certification.opencart.tasks.FilterEdit.performAs(FilterEdit.java:32)<br />co.com.choucair.certification.opencart.stepdefinitions.CP2StepDefinitions.sheEntersTheDataSheWantsToEdit(CP2StepDefinitions.java:16)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //a[contains(text(),'null')] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>co.com.choucair.certification.opencart.util.Utilities.selectSeoUrl(Utilities.java :23)<br />co.com.choucair.certification.opencart.tasks.FilterEdit.performAs(FilterEdit.java :32)<br />co.com.choucair.certification.opencart.stepdefinitions.CP2StepDefinitions.sheEntersTheDataSheWantsToEdit(CP2StepDefinitions.java :16)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource7837876244667389254.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Example: {username=demo, password=demo, seourl=SEO URL, query=product_id=47, keyword=hp-lp3065, store=Default, language=English, queryedit=category_id=18, keywordedit=CORRECION, storeedit=Default, languajeedit=English, warning=Warning: You do not have permission to modify SEO URL!
@@ -221,35 +267,8 @@
                 <img src="6ae890b09f600b09ccfe564a471155458cde7dc68daf6db742ad7312d2204e35.png" title=" Tania Ruiz Sanchez enters 'demo' into enter username" width="1366"/>
                 <img src="46ed8f92daed19dfd4e0b377e8e883d0f50bcac41b2ab1f9111a7e5233249d3e.png" title=" Tania Ruiz Sanchez enters 'demo' into enter password" width="1366"/>
                 <img src="5ca5e650dfebe7e06ee88baeba565717a2086afd6f400f00e975885a992561cf.png" title=" Tania Ruiz Sanchez clicks on Click on the login button" width="1366"/>
-                <img src="211401ae0b8f6d63064a5eeb7c3c05d9518683ffd9d2012b0aad83c2be1a46da.png" title=" Tania Ruiz Sanchez clicks on Click on Desing" width="1366"/>
-                <img src="2530e04aa49f1cde0a84316792c2c8188c1fb0a19f1bab971751bc75f1071b97.png" title=" Tania Ruiz Sanchez clicks on Select SEO URL" width="1366"/>
-                <img src="e06b8f2a1d9dc5c1c19fab5c1d0ae4013368d8ed527e593a12e3a0b6c6a3edef.png" title=" Tania Ruiz Sanchez enters 'product_id=47' into Write the query" width="1366"/>
-                <img src="ffee66904e0066cea7fed6224a604e1185237c383d5b4b24f5688fd6c77601b8.png" title=" Tania Ruiz Sanchez enters 'hp-lp3065' into Write the keyword" width="1366"/>
-                <img src="6c2f8235d847065b278d66e253bb4adce51d0462b0d5d334ce44555e132b1369.png" title=" Tania Ruiz Sanchez clicks on Select Store" width="1366"/>
-                <img src="41773f8150cbb896a3e9314fe5683626f2118ef97b48b79819c036609a327a17.png" title=" Tania Ruiz Sanchez clicks on Select Languaje" width="1366"/>
-                <img src="7b2ff64019b39aa27962dbb1b9557888f4a9c450e30b92cb9a34a04f6fe7c678.png" title=" Tania Ruiz Sanchez clicks on Click boton Filter" width="1366"/>
-                <img src="cff638ccaa43502b144671bfcd05445b5f9a496625aa1e8c01e36d39a776913a.png" title=" Tania Ruiz Sanchez clicks on Click boton edit" width="1366"/>
-                <img src="71a3d991506244cb61e037141fc7d3cefe29947ef886126c07ce884e875900c7.png" title=" Tania Ruiz Sanchez clicks on Click boton edit" width="1366"/>
-                <img src="df21a7075c6f90b1c9051979b6a5c1c855f907b26a3a2e18fd4843a1301d2686.png" title=" Tania Ruiz Sanchez enters 'category_id=18' into Write the query edit" width="1366"/>
-                <img src="12210f77cc4472dcf0443e9511f2deafc7a04a5b454f88d9da5185217937d16c.png" title=" Tania Ruiz Sanchez enters 'CORRECION' into Write the keyword edit" width="1366"/>
-                <img src="3a589ff5ad52ddeae18f8a62200c69b9e5aa674019b65884302f38fe3f267f8e.png" title=" Tania Ruiz Sanchez clicks on Select Store Edit" width="1366"/>
-                <img src="13a5af0863916554ee6004229ec833bdff64064d07a929ca42f35637840e7f7d.png" title=" Tania Ruiz Sanchez clicks on Select Languaje edit" width="1366"/>
-                <img src="0dec61f8517e64a70d57bf2e30fafeab743c40b8e875f9c86491346b67edc327.png" title=" Tania Ruiz Sanchez clicks on Click boton Save" width="1366"/>
-                <img src="0dec61f8517e64a70d57bf2e30fafeab743c40b8e875f9c86491346b67edc327.png" title=" Tania ruiz sanchez filter edit (completed)" width="1366"/>
-                <img src="0dec61f8517e64a70d57bf2e30fafeab743c40b8e875f9c86491346b67edc327.png" title=" When She enters the data she wants to edit
-| username | password | seourl | query | keyword | store | language | queryedit | keywordedit | storeedit | languajeedit |
-| demo | demo | SEO URL | product_id=47 | hp-lp3065 | Default | English | category_id=18 | CORRECION | Default | English | (completed)" width="1366"/>
-                <img src="0dec61f8517e64a70d57bf2e30fafeab743c40b8e875f9c86491346b67edc327.png" title=" Then She displays a warning message
-| warning |
-| Warning: You do not have permission to modify SEO URL!
-&times; |" width="1366"/>
-                <img src="0dec61f8517e64a70d57bf2e30fafeab743c40b8e875f9c86491346b67edc327.png" title=" Then answer edit" width="1366"/>
-                <img src="0dec61f8517e64a70d57bf2e30fafeab743c40b8e875f9c86491346b67edc327.png" title=" Then She displays a warning message
-| warning |
-| Warning: You do not have permission to modify SEO URL!
-&times; | (completed)" width="1366"/>
-                <img src="0dec61f8517e64a70d57bf2e30fafeab743c40b8e875f9c86491346b67edc327.png" title=" Example: {username=demo, password=demo, seourl=SEO URL, query=product_id=47, keyword=hp-lp3065, store=Default, language=English, queryedit=category_id=18, keywordedit=CORRECION, storeedit=Default, languajeedit=English, warning=Warning: You do not have permission to modify SEO URL!
-&times;} (completed)" width="1366"/>
+                <img src="e2e9df483586fea367a8f462973aa14175b01a0ab580db6a91528f82959232e0.png" title=" Tania Ruiz Sanchez clicks on Click on Desing" width="1366"/>
+                <img src="75485b0b56778edba27a6fe060353389b67a16f9153d1bb68b985d6a60ce0aeb.png" title=" Tania Ruiz Sanchez clicks on Select SEO URL" width="1366"/>
                 <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Example: {username=demo, password=demo, seourl=SEO URL, query=category_id=18, keyword=laptop-notebook, store=Default, language=English, queryedit=EDICION, keywordedit=CORRECION, storeedit=Default, languajeedit=English, warning=Warning: You do not have permission to modify SEO URL!
 &times;}" width="1366"/>
                 <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Given Tania wants to filter data in the SEO URL list" width="1366"/>
@@ -264,35 +283,8 @@
                 <img src="6ae890b09f600b09ccfe564a471155458cde7dc68daf6db742ad7312d2204e35.png" title=" Tania Ruiz Sanchez enters 'demo' into enter username" width="1366"/>
                 <img src="46ed8f92daed19dfd4e0b377e8e883d0f50bcac41b2ab1f9111a7e5233249d3e.png" title=" Tania Ruiz Sanchez enters 'demo' into enter password" width="1366"/>
                 <img src="5ca5e650dfebe7e06ee88baeba565717a2086afd6f400f00e975885a992561cf.png" title=" Tania Ruiz Sanchez clicks on Click on the login button" width="1366"/>
-                <img src="5464961dc843ab81f82eea7c1c5bd1e33da866b185d37275df19a6c95b768406.png" title=" Tania Ruiz Sanchez clicks on Click on Desing" width="1366"/>
-                <img src="2530e04aa49f1cde0a84316792c2c8188c1fb0a19f1bab971751bc75f1071b97.png" title=" Tania Ruiz Sanchez clicks on Select SEO URL" width="1366"/>
-                <img src="8acea215f315e90d307ae0bb6f9804fd80b95a03e74b6a6d0f683abb76fa5db0.png" title=" Tania Ruiz Sanchez enters 'category_id=18' into Write the query" width="1366"/>
-                <img src="44051197445db4892d2508f99fe96cdfcb6d0556d46b0fbf574bc7a2ce39a1f9.png" title=" Tania Ruiz Sanchez enters 'laptop-notebook' into Write the keyword" width="1366"/>
-                <img src="58b6825ce9d0c8e4fd71b86181592db83d71c3c24a5ec03bff2fad72499a7f11.png" title=" Tania Ruiz Sanchez clicks on Select Store" width="1366"/>
-                <img src="e8c146d8ff7834c6b02825e128155fcece4e1b844506af0791fdc73d4a5a0dc6.png" title=" Tania Ruiz Sanchez clicks on Select Languaje" width="1366"/>
-                <img src="f511670fd9c0a56dec6a8b182c2e528cb6dd6fc9fdbf2eec07bd6d65311b11ed.png" title=" Tania Ruiz Sanchez clicks on Click boton Filter" width="1366"/>
-                <img src="8be0c1b7035a40adf2c5eb487080018d0732e397b03a73d55d04471dacf89108.png" title=" Tania Ruiz Sanchez clicks on Click boton edit" width="1366"/>
-                <img src="cc84f1229f9fce1ad295b04c5f040f7f4715a1a0ed55653979116a3d7c0adc78.png" title=" Tania Ruiz Sanchez clicks on Click boton edit" width="1366"/>
-                <img src="63bcca7e1df49d11b8a6fad1edff1d1c2c9308af9edd4dce8e138e4455b3bfe6.png" title=" Tania Ruiz Sanchez enters 'EDICION' into Write the query edit" width="1366"/>
-                <img src="56930a6a5e0b5a71fcf653945ce8555d60bff743bc52d80b2a67e12cf5b635c7.png" title=" Tania Ruiz Sanchez enters 'CORRECION' into Write the keyword edit" width="1366"/>
-                <img src="1f40fb10347781413e54b737e1f68bb9956c49cedf7c5f2aff5105fad5570ebe.png" title=" Tania Ruiz Sanchez clicks on Select Store Edit" width="1366"/>
-                <img src="6813666636058ad66350bf9193e514f1904bc90124d5782da92f0014c20b4c83.png" title=" Tania Ruiz Sanchez clicks on Select Languaje edit" width="1366"/>
-                <img src="becbc60f64922df47af106525ff9afeaef248089abb1bb113320eeca190e8b37.png" title=" Tania Ruiz Sanchez clicks on Click boton Save" width="1366"/>
-                <img src="becbc60f64922df47af106525ff9afeaef248089abb1bb113320eeca190e8b37.png" title=" Tania ruiz sanchez filter edit (completed)" width="1366"/>
-                <img src="becbc60f64922df47af106525ff9afeaef248089abb1bb113320eeca190e8b37.png" title=" When She enters the data she wants to edit
-| username | password | seourl | query | keyword | store | language | queryedit | keywordedit | storeedit | languajeedit |
-| demo | demo | SEO URL | category_id=18 | laptop-notebook | Default | English | EDICION | CORRECION | Default | English | (completed)" width="1366"/>
-                <img src="becbc60f64922df47af106525ff9afeaef248089abb1bb113320eeca190e8b37.png" title=" Then She displays a warning message
-| warning |
-| Warning: You do not have permission to modify SEO URL!
-&times; |" width="1366"/>
-                <img src="becbc60f64922df47af106525ff9afeaef248089abb1bb113320eeca190e8b37.png" title=" Then answer edit" width="1366"/>
-                <img src="becbc60f64922df47af106525ff9afeaef248089abb1bb113320eeca190e8b37.png" title=" Then She displays a warning message
-| warning |
-| Warning: You do not have permission to modify SEO URL!
-&times; | (completed)" width="1366"/>
-                <img src="becbc60f64922df47af106525ff9afeaef248089abb1bb113320eeca190e8b37.png" title=" Example: {username=demo, password=demo, seourl=SEO URL, query=category_id=18, keyword=laptop-notebook, store=Default, language=English, queryedit=EDICION, keywordedit=CORRECION, storeedit=Default, languajeedit=English, warning=Warning: You do not have permission to modify SEO URL!
-&times;} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="e2e9df483586fea367a8f462973aa14175b01a0ab580db6a91528f82959232e0.png" title=" Tania Ruiz Sanchez clicks on Click on Desing" width="1366"/>
+                <img src="75485b0b56778edba27a6fe060353389b67a16f9153d1bb68b985d6a60ce0aeb.png" title=" Tania Ruiz Sanchez clicks on Select SEO URL: <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 
